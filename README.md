@@ -1,7 +1,7 @@
 # DisasterEvacuations
 This is a very brief guide for identifying evacuated areas with <a href="https://www.openstreetmap.org/about">OpenStreetMap</a> data.
 
-Disasters, like wildfires, are at times the most dangerous and unpredictable in their early stages. In a rush, the only way to get polygons of evacuated areas quickly is to select multiple sets of streets using desktop software like QGIS or ArcGIS Pro.
+Disasters, like wildfires, are at times the most dangerous and unpredictable in their early stages. In a rush, the only way to get polygons of evacuated areas quickly is to select multiple sets of streets using desktop software like QGIS or <a href="https://pro.arcgis.com/en/pro-app/">ArcGIS Pro</a>.
 
 1. Install <a href="https://qgis.org/en/site/index.html">QGIS</a> (OSGEO4W installation).
 2. Download your state's OpenStreetMap data from Geofabrik. This example and Python script uses <a href="http://download.geofabrik.de/north-america/us/california.html">California</a> (California-latest-free.shp.zip, about 1.3 GB).
