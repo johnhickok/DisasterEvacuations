@@ -10,7 +10,7 @@ Disasters, like wildfires, are at times the most dangerous and unpredictable in 
 5. Running extract_roads.py should create a statewide geopackage from road features in your download that have street names. Unnamed road featrues are filtered out.
 6. Add the geopackage to your QGIS, ArcMap or ArcGIS Pro just like you would any feature class. Chose any basemap you wish.
 7. Selecting multiple streets to get patterns is simple, e.g. "name" in ('Imperial Highway', 'Norwalk Boulevard', 'Bloomfield Avenue') Consult your desktop GIS docs.
-8. When you are confident you see the pattern of the area to be evacuated, create and draw a new polygon shapefile, WinZip, and send it in.
+8. When you are confident you see the pattern of the area to be evacuated, create and draw a new polygon shapefile, WinZip, and send it in to whoever may need it.
 
 <p>Geopackage Home Page: <a href="http://www.geopackage.org/">http://www.geopackage.org/</a></p>
 <p>Gepackage GDAL Reference: <a href="http://www.gdal.org/drv_geopackage.html">http://www.gdal.org/drv_geopackage.html</a><p/>
