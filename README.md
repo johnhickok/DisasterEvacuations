@@ -1,5 +1,5 @@
 # DisasterEvacuations
-This is a very brief guide for identifying evacuated areas with OpenStreetMap data.
+This is a very brief guide for identifying evacuated areas with <a href="https://www.openstreetmap.org/about">OpenStreetMap</a> data.
 
 Disasters, like wildfires, are at times the most dangerous and unpredictable in their early stages. In a rush, the only way to get polygons of evacuated areas quickly is to select multiple sets of streets using desktop software like QGIS or ArcGIS Pro.
 
