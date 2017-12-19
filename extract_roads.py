@@ -29,4 +29,4 @@ os.rename('gis.osm_roads_free_1.shx', 'osm_roads_free_1.shx')
 subprocess.call('C:/OSGeo4W64/bin/o4w_env.bat')
 
 # Use ogr2ogr to convert your shapefile to a geopackage
-subprocess.call('C:/OSGeo4W64/bin/ogr2ogr.exe -f GPKG osm_roads.gpkg osm_roads_free_1.shp -sql "SELECT * FROM osm_roads_free_1 WHERE name is not null"')
+subprocess.call('C:/OSGeo4W64/bin/ogr2ogr.exe -f GPKG osm_roads.gpkg -nln roads osm_roads_free_1.shp -sql "SELECT * FROM osm_roads_free_1 WHERE name is not null"')
