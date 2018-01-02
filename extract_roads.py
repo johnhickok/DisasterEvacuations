@@ -29,4 +29,26 @@ os.rename('gis.osm_roads_free_1.shx', 'osm_roads_free_1.shx')
 subprocess.call('C:/OSGeo4W64/bin/o4w_env.bat')
 
 # Use ogr2ogr to convert your shapefile to a geopackage
-subprocess.call('C:/OSGeo4W64/bin/ogr2ogr.exe -f GPKG osm_roads.gpkg -nln roads osm_roads_free_1.shp -sql "SELECT * FROM osm_roads_free_1 WHERE name is not null"')
+# First, create a string to run...
+callstring = 'C:/OSGeo4W64/bin/ogr2ogr.exe -f GPKG osm_roads.gpkg '
+callstring += '-nln roads osm_roads_free_1.shp -sql '
+callstring += '"SELECT * FROM osm_roads_free_1 WHERE name is not null"'
+
+# Now call the string
+subprocess.call(callstring)
+
+# Use ogr2ogr to replace your shapefile with only streets with names
+# Create a string to run...
+callstring_shp = 'C:/OSGeo4W64/bin/ogr2ogr.exe osm_roads.shp '
+callstring_shp += 'osm_roads_free_1.shp -sql '
+callstring_shp += '"SELECT * FROM osm_roads_free_1 WHERE name is not null"'
+
+# Now call the string
+subprocess.call(callstring_shp)
+
+# Remove shapefiles that have no street names
+os.remove('osm_roads_free_1.cpg')
+os.remove('osm_roads_free_1.dbf')
+os.remove('osm_roads_free_1.prj')
+os.remove('osm_roads_free_1.shp')
+os.remove('osm_roads_free_1.shx')
