@@ -7,7 +7,7 @@ Disasters, like wildfires, are at times the most dangerous and unpredictable in 
 2. Download your state's OpenStreetMap data from Geofabrik. This example and GDAL Python script uses <a href="http://download.geofabrik.de/north-america/us/california.html">California</a> (California-latest-free.shp.zip, about 1.3 GB).
 3. Create a folder on your local drive (e.g. C:\myfiles\gisdata\osm) and move your downloaded ZIP file there.
 4. Download extract_roads.py from this repository to your local folder.
-5. Running extract_roads.py should create a statewide geopackage from road features in your download that have street names. Unnamed road featrues are filtered out.
+5. Running extract_roads.py should create a statewide geopackage from road features in your download that have street names. Unnamed road features are filtered out.
 6. Add the geopackage to QGIS, ArcMap or ArcGIS Pro just like you would any feature class. Chose any basemap you wish.
 7. Selecting multiple streets to get patterns is simple, e.g. "name" in ('Imperial Highway', 'Norwalk Boulevard', 'Bloomfield Avenue') Consult your desktop GIS docs.
 8. When you are confident you see the pattern of the area to be evacuated, create and draw a new polygon shapefile, WinZip, and send it in to whoever may need it.
